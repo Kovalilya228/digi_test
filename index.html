@@ -5,8 +5,454 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyShop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="layout-container">
+        <header class="header">
+            <div class="header__left-side">
+                <div class="header__logo">
+                    <img src="img/logo.png" alt="Логотип магазина" class="header__logo-image">
+                    <p class="header__logo-desc">Логотип</p>
+                </div>
+                <button class="header__catalogue-btn">Каталог</button>
+            </div>
+            <div class="header__custom-search-input">
+                <input type="text" class="header__search" placeholder="Поиск по 100 000 товаров">
+                <button class="header__search_mobile-button">Найти</button>
+            </div>
+            <nav class="header__menu">
+                <a href="" class="header__menu-link">Информация о компании</a>
+                <a href="" class="header__menu-link">Контакты</a>
+                <a href="" class="header__menu-link">Полезные ссылки</a>
+            </nav>
+        </header>
+        <main class="main">
+            <aside class="filter">
+                <div class="filter__category-container">
+                    <ul class="filter__category-list">
+                        <li class="filter__category-item list-item">
+                            <p class="filter__category-item__category-name list-item-name">Название категории</p>
+                            <p class="filter__category-item__category-count list-item-count">3</p>
+                        </li>
+                        <li class="filter__category-item list-item">
+                            <p class="filter__category-item__category-name list-item-name">Название категории</p>
+                            <p class="filter__category-item__category-count list-item-count">3</p>
+                        </li>
+                        <li class="filter__category-item list-item">
+                            <p class="filter__category-item__category-name list-item-name">Название категории</p>
+                            <p class="filter__category-item__category-count list-item-count">3</p>
+                        </li>
+                        <li class="filter__category-item filter__category-item_active list-item">
+                            <p class="filter__category-item__category-name list-item-name">Название категории</p>
+                            <p class="filter__category-item__category-count list-item-count">3</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter__price-container">
+                    <p class="filter__price-heading heading">Цена</p>
+                    <div class="filter__price-input-container">
+                        <div class="filter__price-custom-input-from">
+                            <input type="text" class="filter__price-input" placeholder="5 500 ₽">
+                        </div>
+                        <div class="filter__price-separator"></div>
+                        <div class="filter__price-custom-input-before">
+                            <input type="text" class="filter__price-input" placeholder="5 500 ₽">
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__brand-container">
+                    <div class="filter__brand-heading-container">
+                        <p class="filter__brand-heading heading">Бренд</p>
+                        <button class="filter__brand-clear">Очистить</button>
+                    </div>
+                    <div class="filter__brand__custom-input">
+                        <input type="text" class="filter__brand-input" placeholder="Поиск">
+                    </div>
+                    <ul class="filter__brand-list">
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__brand-item list-item">
+                            <label class="filter__brand-item__brand-item-label">
+                                <input type="checkbox" class="filter__brand-item__brand-item-checkbox">
+                                <div class="filter__brand-item__brand-item-info">
+                                    <p class="filter__brand-item__brand-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__brand-item__brand-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter__size-container">
+                    <p class="filter__size-heading heading">Размер</p>
+                    <ul class="filter__size-list">
+                        <li class="filter__size-item list-item">
+                            <label class="filter__size-item__size-item-label">
+                                <input type="checkbox" class="filter__size-item__size-item-checkbox">
+                                <div class="filter__size-item__size-item-info">
+                                    <p class="filter__size-item__size-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__size-item__size-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__size-item list-item">
+                            <label class="filter__size-item__size-item-label">
+                                <input type="checkbox" class="filter__size-item__size-item-checkbox">
+                                <div class="filter__size-item__size-item-info">
+                                    <p class="filter__size-item__size-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__size-item__size-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__size-item list-item">
+                            <label class="filter__size-item__size-item-label">
+                                <input type="checkbox" class="filter__size-item__size-item-checkbox">
+                                <div class="filter__size-item__size-item-info">
+                                    <p class="filter__size-item__size-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__size-item__size-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__size-item list-item">
+                            <label class="filter__size-item__size-item-label">
+                                <input type="checkbox" class="filter__size-item__size-item-checkbox">
+                                <div class="filter__size-item__size-item-info">
+                                    <p class="filter__size-item__size-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__size-item__size-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__size-item list-item">
+                            <label class="filter__size-item__size-item-label">
+                                <input type="checkbox" class="filter__size-item__size-item-checkbox">
+                                <div class="filter__size-item__size-item-info">
+                                    <p class="filter__size-item__size-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__size-item__size-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="filter__size-item list-item">
+                            <label class="filter__size-item__size-item-label">
+                                <input type="checkbox" class="filter__size-item__size-item-checkbox">
+                                <div class="filter__size-item__size-item-info">
+                                    <p class="filter__size-item__size-item-name list-item-name">Атрибут</p>
+                                    <p class="filter__size-item__size-item-count list-item-count">3</p>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <h2 class="mobile-title">Название категории</h2>
+            <div class="main-catalogue">
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices card-prices-hidden">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn card-btn-unable">Сообщить о поступлении</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+                <div class="grid-item card">
+                    <div class="card-hot-label">
+                        <p class="card-hot-label-desc">Хит продаж</p>
+                        <img src="img/hot-image.png" alt="иконка огонька" class="card-hot-label-image">
+                    </div>
+                    <img src="img/card-image.png" alt="картинка товара" class="card-image">
+                    <div class="card-discount-label">25%</div>
+                    <div class="card-info">
+                        <p class="card-brand">Бренд</p>
+                        <p class="card-title">Полное название товара в несколько строк для вида с обрывом в конце...</p>
+                        <div class="card-prices">
+                            <p class="card-prices_new-price">5 990 ₽</p>
+                            <p class="card-prices_old-price">5 990 ₽</p>
+                        </div>
+                        <button class="card-btn">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
